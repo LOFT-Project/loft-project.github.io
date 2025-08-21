@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOFT</title>
+    <link rel="icon" type="image/png" href="logo.png">
+    <link rel="apple-touch-icon" href="logo.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-layout">
+                <div class="logo-container">
+                    <img src="logo.png" alt="LOFT Logo" class="main-logo">
+                </div>
+                <div class="header-content">
+                    <div class="logo-section">
+                        <div class="project-title">
+                            <h2>Living Off Free Trials (LOFT) Project</h2>
+                        </div>
+                    </div>
+                    <div class="description">
+                        <p>A curated directory of SaaS platforms offering free tiers, trials, and developer accounts. While there will likely be some cross-over with the LOTS project, LOFT is intended as a companion, rather than a replacement/competitor.</p>
+                        <p>Want to contribute? See our <a href="https://github.com/loft/loft/contributing.md" target="_blank">Contributing Guide</a>.</p>
+                    </div>
+                </div>
+            </div>
+        </header>
+        
+        <div class="controls">
+            <input type="search" id="search" placeholder="Search (+ for tags, # for category)">
+            <button id="sort-btn">Sort</button>
+            <span id="count">0 platforms</span>
+        </div>
+        
+        <div class="table-container">
+            <table id="platforms-table">
+                <thead>
+                    <tr>
+                        <th>Platform</th>
+                        <th>Category</th>
+                        <th>Tags</th>
+                    </tr>
+                </thead>
+                <tbody id="platforms-tbody">
+                    <!-- Platforms will be loaded here -->
+                </tbody>
+            </table>
+        </div>
+        
+        <footer>
+            <p>Inspired by <a href="https://lots-project.com" target="_blank">LOTS Project</a>, <a href="https://lolbas-project.github.io/" target="_blank">LOLBAS</a>, and <a href="https://gtfobins.github.io/" target="_blank">GTFOBins</a></p>
+        </footer>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

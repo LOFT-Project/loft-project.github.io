@@ -1,0 +1,2 @@
+# Data directory for processed YAML files
+# This directory is populated by the LOFT content repository's GitHub Actions workflow
