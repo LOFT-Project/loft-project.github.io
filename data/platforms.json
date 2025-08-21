@@ -1,0 +1,106 @@
+{
+  "meta": {
+    "generated_at": "2025-08-21T14:45:26.412Z",
+    "total_platforms": 4,
+    "categories": [
+      "CDN",
+      "Development",
+      "Email"
+    ],
+    "tags": [
+      "C&C",
+      "CDN",
+      "DNS",
+      "Download",
+      "Free Tier",
+      "Phishing",
+      "Security",
+      "Trial",
+      "Workers"
+    ],
+    "version": "1.0.0"
+  },
+  "platforms": [
+    {
+      "name": "Cloudflare",
+      "website": "https://cloudflare.com",
+      "category": "CDN",
+      "free_tier": "Unlimited bandwidth, global CDN, basic DDoS protection. Free inbound email routing.",
+      "trial": "N/A",
+      "developer_account": "N/A",
+      "tags": [
+        "Free Tier",
+        "CDN",
+        "DNS",
+        "Security",
+        "Workers"
+      ],
+      "pricing_url": "https://cloudflare.com/plans",
+      "last_updated": "2025-08-21",
+      "contributor": "@two06",
+      "slug": "cloudflare",
+      "source_file": "platforms/cloudflare.yml",
+      "processed_at": "2025-08-21T14:45:26.403Z"
+    },
+    {
+      "name": "Docusign",
+      "website": "https://www.docusign.com/",
+      "category": "Email",
+      "free_tier": "N/A",
+      "trial": "Free trial limited to 3 envelops containing 5 recipients. Both limits are enforced (i.e. using an envelope to send a test message will leave you with 10 recipients remaining).",
+      "developer_account": "N/A",
+      "contributor": "@two06",
+      "tags": [
+        "Trial",
+        "Phishing"
+      ],
+      "phishing_description": "Documents can contain custom URLs (https://support.docusign.com/s/articles/How-to-create-a-hyperlink-in-DocuSign).",
+      "pricing_url": "https://ecom.docusign.com/en-GB/plans-and-pricing/esignature",
+      "last_updated": "2025-01-18",
+      "slug": "Docusign",
+      "source_file": "platforms/Docusign.yml",
+      "processed_at": "2025-08-21T14:45:26.404Z"
+    },
+    {
+      "name": "GitHub",
+      "website": "https://github.com",
+      "category": "Development",
+      "free_tier": "Unlimited public repos, 2000 Actions minutes",
+      "trial": "N/A",
+      "developer_account": "N/A",
+      "contributor": "@two06",
+      "tags": [
+        "Free Tier",
+        "Download",
+        "Phishing",
+        "C&C"
+      ],
+      "download_description": "Public repositories can host malicious payloads and tools",
+      "cc_description": "Issues and wikis can be used for command and control communication",
+      "pricing_url": "https://github.com/pricing",
+      "last_updated": "2025-08-21",
+      "slug": "github",
+      "source_file": "platforms/github.yml",
+      "processed_at": "2025-08-21T14:45:26.402Z"
+    },
+    {
+      "name": "Mailchimp",
+      "website": "https://mailchimp.com/",
+      "category": "Email",
+      "free_tier": "Free tier is available, limited to 500 contacts (you can delete and re-add these without penalty)",
+      "trial": "N/A",
+      "developer_account": "N/A",
+      "contributor": "@two06",
+      "tags": [
+        "Trial",
+        "Phishing"
+      ],
+      "phishing_description": "Free templates (limited selection), tracking, analytics, custom sending domains.",
+      "pricing_url": "https://mailchimp.com/pricing/marketing/?currency=GBP",
+      "last_updated": "2025-01-18",
+      "slug": "Mailchimp",
+      "source_file": "platforms/Mailchimp.yml",
+      "processed_at": "2025-08-21T14:45:26.404Z"
+    }
+  ]
+}
