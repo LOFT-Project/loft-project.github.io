@@ -1,0 +1,17 @@
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+logs/
+*.log
+
+# Keep data directory but ignore temp files
+data/*.tmp
+data/*.backup
