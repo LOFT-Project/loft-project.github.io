@@ -193,6 +193,7 @@ class PlatformDirectory {
     createPlatformRow(platform, index) {
         const tags = platform.tags.map(tag => {
             let className = 'tag';
+            let tooltip = '';
             if (tag.includes('Free Tier')) className += ' free-tier';
             else if (tag.includes('Trial')) className += ' trial';
             else if (tag.includes('Dev Tier')) className += ' developer';
@@ -201,8 +202,12 @@ class PlatformDirectory {
             else if (tag.includes('Download')) className += ' download';
             else if (tag.includes('Exfiltration')) className += ' exfiltration';
             else if (tag.includes('C&C')) className += ' cc';
+            else if (tag.includes('Unverified')) {
+                className += ' unverified';
+                tooltip = ' title="Not verified by the project maintainers"';
+            }
             
-            return `<span class="${className}">${tag}</span>`;
+            return `<span class="${className}"${tooltip}>${tag}</span>`;
         }).join('');
 
         const rowId = `platform-${index}`;
